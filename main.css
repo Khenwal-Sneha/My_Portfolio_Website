@@ -1,0 +1,162 @@
+/* Styling for whole body */
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+   background-color: #100D28;
+   color: antiquewhite;
+   font-family: cursive;
+}
+
+
+
+
+/* Styling for all images */
+/* Initial state of the images */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(50px); /* Move the image down slightly */
+    transition: opacity 1s ease-out, transform 2s ease-out; /* Define transition */
+}
+  
+/* Class to add when image is in view */
+.scroll-animate.in-view {
+    opacity: 1;
+    transform: translateY(0); /* Move the image back to its original position */
+}
+
+
+
+
+/* General Styling for all links */
+a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: cursive;
+    font-weight: 10;
+    margin: 1rem;
+    font-size: 1.3rem;
+}
+
+a:hover{
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+
+
+
+/* General Styling for buttons */
+button {
+    background-color: #100d28;
+    color: #ffffff; 
+    border: 2px solid white; 
+    border-radius: 20px; 
+    font-family: cursive;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer; 
+    transition: background-color 0.3s transform 0.3s; 
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #7d3476;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #d03dc1; 
+    transform: translateY(1px); 
+}
+
+button:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px rgb(118, 112, 112); 
+}
+
+
+
+
+/* Styling for header */
+.header{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+/* Styling for intro section */
+.intro{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    margin-left: 10rem;
+    font-size: large;
+}
+    /* Styling for link in button */
+.intro1 a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: cursive;
+    font-weight: normal;
+    margin: 0rem;
+    font-size: 1rem;
+}
+
+.intro1 a:hover{
+    text-decoration: none;
+}
+
+
+
+
+/* Styling for skills section */
+.skills{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    margin: 2rem;
+    margin-left: 3rem;
+    margin-right: 10rem;
+    font-size: large;
+}
+
+
+
+
+/* Styling for work section */
+.work{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    margin-left: 10rem;
+    margin-top: 10px;
+    font-size: large;
+}
+
+
+
+
+/* Styling for contact section */
+.contact{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    margin: 2rem;
+    margin-right: 10rem;
+    font-size: large;
+}
+
+
+
+
+
+  
+
+
+
